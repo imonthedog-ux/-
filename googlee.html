@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SINXE</title>
+<style>
+body {
+    margin: 0;
+    background: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #0a0a0a;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 40px white;
+    width: 400px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 15px white;
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 20px white;
+    transition: 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.bottom {
+    margin-top: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ccc;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="hacker.jpg" class="logo">
+
+<div class="title">SINXE</div>
+
+<a href="https://youtu.be/e_eyfdZoS7M" target="_blank">
+<img class="thumbnail"
+src="youtube.jpg">
+</a>
+
+<div class="bottom">the script</div>
+
+<button onclick="copyText()">Copy</button>
+
+</div>
+
+<script>
+function copyText() {
+    const text = 'loadstring(game:HttpGet("https://pastebin.com/raw/RFnr58c7"))()';
+    navigator.clipboard.writeText(text);
+    alert("Copied script!");
+}
+</script>
+
+</body>
+</html>
